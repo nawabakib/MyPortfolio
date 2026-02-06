@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SafetyFirst - Services Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left">
+                <div class="d-inline-flex align-items-center">
+                    <p class="mr-2 mb-2 mb-lg-0 text-white">Opening Hours:</p>
+                    <span class="mb-2 mb-lg-0 text-white">8.00AM - 9.00PM</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <p class="m-0 mr-1 text-white">Follow Us:</p>
+                    <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-white px-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="{{ url_for('index') }}" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">Safety</span>First</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Our Office</h6>
+                        <p class="m-0">123 Street, NY, USA</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">info@example.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 mb-5">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-0">
+            <a href="{{ url_for('index') }}" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="{{ url_for('index') }}" class="nav-item nav-link">Home</a>
+                    <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+                    <a href="{{ url_for('service') }}" class="nav-item nav-link active">Services</a>
+                    <a href="{{ url_for('guard') }}" class="nav-item nav-link">Guards</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="{{ url_for('blog') }}" class="dropdown-item">Blog Grid</a>
+                            <a href="{{ url_for('single') }}" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container pt-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h5 class="text-primary mb-3">Our Services</h5>
+            <h1 class="m-0">Premium Security Services</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top w-100" src="{{ url_for('static', filename='img/service-1.jpg') }}" alt="Office Security">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h6 class="card-title text-white text-truncate m-0">Office Security</h6>
+                    </div>
+                    <div class="card-footer bg-white">
+                        24/7 manned security for corporate offices, reception areas, and executive protection services.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top w-100" src="{{ url_for('static', filename='img/service-2.jpg') }}" alt="Home Security">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h6 class="card-title text-white text-truncate m-0">Home Security</h6>
+                    </div>
+                    <div class="card-footer bg-white">
+                        Residential security guards for gated communities, villas, and individual homes.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top w-100" src="{{ url_for('static', filename='img/service-3.jpg') }}" alt="Industry Security">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h6 class="card-title text-white text-truncate m-0">Industry Security</h6>
+                    </div>
+                    <div class="card-footer bg-white">
+                        Industrial plant protection, warehouse security, and manufacturing facility guarding.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="container p-0 py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h5 class="text-primary mb-3">Testimonial</h5>
+                <h1 class="m-0">What Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item px-3">
+                    <div class="testimonial-text position-relative border bg-light mb-4 py-3 px-4">
+                        "SafetyFirst transformed our office security. Professional guards and excellent response time!"
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="img-thumbnail bg-light rounded-circle" src="{{ url_for('static', filename='img/testimonial-1.jpg') }}" style="width: 80px; height: 80px; padding: 12px;" alt="Client">
+                        <div class="pl-4">
+                            <h6 class="text-primary">Rajesh Kumar</h6>
+                            <p class="m-0">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item px-3">
+                    <div class="testimonial-text position-relative border bg-light mb-4 py-3 px-4">
+                        "Highly recommend their home security services. Guards are well-trained and reliable."
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="img-thumbnail bg-light rounded-circle" src="{{ url_for('static', filename='img/testimonial-2.jpg') }}" style="width: 80px; height: 80px; padding: 12px;" alt="Client">
+                        <div class="pl-4">
+                            <h6 class="text-primary">Priya Sharma</h6>
+                            <p class="m-0">Home Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+                <p class="m-0">Professional security guard services with 24/7 support.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="{{ url_for('index') }}"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="{{ url_for('about') }}"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="{{ url_for('service') }}"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                            <a class="text-white" href="{{ url_for('contact') }}"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-secondary border back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
